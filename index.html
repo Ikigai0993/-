@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой сайт мерча</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <h2>МойСайт</h2>
+        </div>
+
+        <nav class="menu">
+            <a href="index.html" class="active">Главная</a>
+            <a href="#panel">Панель</a>
+            <a href="#content">Услуги</a>
+            <a href="#footer">Контакты</a>
+        </nav>
+
+        <div class="menu-toggle" title="Переключить меню">
+            <svg class="burger-icon" viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+                <!-- Линии гамбургера -->
+                <line class="line line-top" x1="4" y1="6" x2="20" y2="6"></line>
+                <line class="line line-mid" x1="4" y1="12" x2="20" y2="12"></line>
+                <line class="line line-bot" x1="4" y1="18" x2="20" y2="18"></line>
+                
+                <!-- Диагонали идеально ровного креста -->
+                <line class="cross cross-1" x1="5" y1="5" x2="19" y2="19"></line>
+                <line class="cross cross-2" x1="19" y1="5" x2="5" y2="19"></line>
+            </svg>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>Добро пожаловать на сайт!</h1>
+        <p>Это сайт мерча колледжа информационных технологий.</p>
+        <button class="hero-btn" onclick="location.href='#content'">Узнать больше</button>
+    </section>
+
+    <!-- 3. ПАНЕЛЬ УПРАВЛЕНИЯ (Dashboard из SVG-иконок) -->
+    <section class="dashboard-section" id="panel">
+        <h2>Панель управления</h2>
+        <div class="title-underline"></div>
+        
+        <div class="dashboard-panel">
+
+            <div class="dashboard-item">
+                <div class="icon-wrapper icon-home">
+                    <svg viewBox="0 0 24 24" width="26" height="26" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                </div>
+                <span>Главная</span>
+            </div>
+
+        
+            <div class="dashboard-item">
+                <div class="icon-wrapper icon-search">
+                    <svg viewBox="0 0 24 24" width="26" height="26" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                </div>
+                <span>Поиск</span>
+            </div>
+
+            <div class="dashboard-item">
+                <div class="icon-wrapper icon-cart">
+                    <svg viewBox="0 0 24 24" width="26" height="26" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="9" cy="21" r="1"></circle>
+                        <circle cx="20" cy="21" r="1"></circle>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                    </svg>
+                </div>
+                <span>Корзина</span>
+            </div>
+
+            <div class="dashboard-item">
+                <div class="icon-wrapper icon-favorite">
+                    <svg viewBox="0 0 24 24" width="26" height="26" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                    </svg>
+                </div>
+                <span>Избранное</span>
+            </div>
+
+            <div class="dashboard-item">
+                <div class="icon-wrapper icon-bell">
+                    <svg viewBox="0 0 24 24" width="26" height="26" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                        <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+                    </svg>
+                </div>
+                <span>Уведомления</span>
+            </div>
+
+            <div class="dashboard-item">
+                <div class="icon-wrapper icon-user">
+                    <svg viewBox="0 0 24 24" width="26" height="26" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                </div>
+                <span>Профиль</span>
+            </div>
+        </div>
+    </section>
+
+    <main class="content" id="content">
+        <h2>Наш мерч</h2>
+        <div class="title-underline"></div>
+
+        <div class="cards-grid">
+
+            <div class="card">
+                <img src="33.jpg" alt="Карточка входа">
+                <h3>Карточка входа</h3>
+                <p>Описание первой услуги: это карточка для входа через терминал.</p>
+                <div class="card-status">В наличии</div>
+                
+                <button class="btn-order">
+                    <svg class="btn-icon" viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none">
+                        <circle cx="9" cy="21" r="1"></circle>
+                        <circle cx="20" cy="21" r="1"></circle>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                    </svg>
+                    <span>Заказать</span>
+                </button>
+            </div>
+
+            <div class="card">
+                <img src="11.jpg" alt="Мерч команды">
+                <h3>Мерч команды колледжа</h3>
+                <p>Описание второй услуги: поддержка команды колледжа.</p>
+                <div class="card-status">В наличии</div>
+                
+                <button class="btn-order">
+                    <svg class="btn-icon" viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none">
+                        <circle cx="9" cy="21" r="1"></circle>
+                        <circle cx="20" cy="21" r="1"></circle>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                    </svg>
+                    <span>Заказать</span>
+                </button>
+            </div>
+
+            <div class="card">
+                <img src="22.jpg" alt="Мерч волонтеров">
+                <h3>Мерч Волонтёров</h3>
+                <p>Описание третьей услуги: поддержка волонтёров нашего колледжа.</p>
+                <div class="card-status">В наличии</div>
+                
+                <button class="btn-order">
+                    <svg class="btn-icon" viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none">
+                        <circle cx="9" cy="21" r="1"></circle>
+                        <circle cx="20" cy="21" r="1"></circle>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                    </svg>
+                    <span>Заказать</span>
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer" id="footer">
+        <div class="footer-content">
+            <p>Телефон: +7 (771) 356-04-97</p>
+            <p>Мы в соцсетях: <a href="https://kit.edu.kz/ru/main" target="_blank">Instagram</a></p>
+            <p>© 2026 Все права защищены Асланом</p>
+        </div>
+    </footer>
+
+</body>
+</html>
